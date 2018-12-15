@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license Copyright (c) 2003-2018, CKSource - Frederico Knabben. All rights reserved.
  * For licensing, see LICENSE.md.
  */
@@ -83,7 +83,7 @@ export default {
 			// In that case, the change has been triggered by instance.model.document#change:data
 			// so #value and instance.getData() are already in sync. Executing instance#setData()
 			// would demolish the selection.
-			if ( this.instance.getData() !== val ) {
+			if (this.instance && this.instance.getData() !== val ) {
 				this.instance.setData( val );
 			}
 		},
